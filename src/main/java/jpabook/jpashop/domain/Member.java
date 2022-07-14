@@ -21,6 +21,7 @@ public class Member {
     private Address address;
 
     @OneToMany(mappedBy = "member") // 난 매핑된 거울이야. order 테이블의 member에서 ,,
-    private List<Order> orders = new ArrayList<>();
+    private List<Order> orders = new ArrayList<>(); //컬렉션은 필드에서 바로 초기화하는 것이 안전.
+
 
 }
